@@ -21596,15 +21596,15 @@ var _RecentWork = __webpack_require__(41);
 
 var _RecentWork2 = _interopRequireDefault(_RecentWork);
 
-var _ContactForm = __webpack_require__(43);
+var _ContactForm = __webpack_require__(53);
 
 var _ContactForm2 = _interopRequireDefault(_ContactForm);
 
-var _Footer = __webpack_require__(45);
+var _Footer = __webpack_require__(55);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _language = __webpack_require__(48);
+var _language = __webpack_require__(58);
 
 var _language2 = _interopRequireDefault(_language);
 
@@ -22015,6 +22015,46 @@ var _ElementRecentWork = __webpack_require__(42);
 
 var _ElementRecentWork2 = _interopRequireDefault(_ElementRecentWork);
 
+var _zegarex = __webpack_require__(43);
+
+var _zegarex2 = _interopRequireDefault(_zegarex);
+
+var _splash = __webpack_require__(44);
+
+var _splash2 = _interopRequireDefault(_splash);
+
+var _wisielec = __webpack_require__(45);
+
+var _wisielec2 = _interopRequireDefault(_wisielec);
+
+var _weather = __webpack_require__(46);
+
+var _weather2 = _interopRequireDefault(_weather);
+
+var _counter = __webpack_require__(47);
+
+var _counter2 = _interopRequireDefault(_counter);
+
+var _diagram = __webpack_require__(48);
+
+var _diagram2 = _interopRequireDefault(_diagram);
+
+var _todolist = __webpack_require__(49);
+
+var _todolist2 = _interopRequireDefault(_todolist);
+
+var _furry = __webpack_require__(50);
+
+var _furry2 = _interopRequireDefault(_furry);
+
+var _sitonchair = __webpack_require__(51);
+
+var _sitonchair2 = _interopRequireDefault(_sitonchair);
+
+var _bloog = __webpack_require__(52);
+
+var _bloog2 = _interopRequireDefault(_bloog);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22029,12 +22069,19 @@ var RecentWork = function (_Component) {
     function RecentWork() {
         _classCallCheck(this, RecentWork);
 
-        return _possibleConstructorReturn(this, (RecentWork.__proto__ || Object.getPrototypeOf(RecentWork)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (RecentWork.__proto__ || Object.getPrototypeOf(RecentWork)).call(this));
+
+        _this.state = {
+            list: [_zegarex2.default, _splash2.default, _wisielec2.default, _weather2.default, _counter2.default, _diagram2.default, _todolist2.default, _furry2.default, _sitonchair2.default, _bloog2.default]
+        };
+        return _this;
     }
 
     _createClass(RecentWork, [{
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             var _props = this.props,
                 dataRecent = _props.dataRecent,
                 dataElementRecent = _props.dataElementRecent;
@@ -22053,8 +22100,8 @@ var RecentWork = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'work_elements' },
-                        dataElementRecent.map(function (el) {
-                            return _react2.default.createElement(_ElementRecentWork2.default, { key: el.title, title: el.title, text: el.text, img: el.img });
+                        dataElementRecent.map(function (el, i) {
+                            return _react2.default.createElement(_ElementRecentWork2.default, { key: el.title, title: el.title, text: el.text, img: _this2.state.list[i] });
                         })
                     ),
                     _react2.default.createElement(
@@ -22140,6 +22187,66 @@ exports.default = ElementRecentWork;
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "8753abd3e5f6a6a06adf636b42e01059.png";
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6e6a1400330d49f4f5d4ed1d75141d10.png";
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "18624644ae02f24a2e76403ea76e5582.png";
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "901d56e1fdc338835eaa010c45bafbaf.png";
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "705ffcbd4d1ffa88022e57d2657a853c.png";
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "61de914771da59488f5fcaaf0faa6897.png";
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "93ff705332263c63823ff4da328330b6.png";
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e5ac54cfea4de76fe757dbdf40114f96.png";
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "20a6b02dc1d1a7159d462d4308988902.png";
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6d769c6a125a82844d8b601bfd3e398f.png";
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -22153,7 +22260,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Address = __webpack_require__(44);
+var _Address = __webpack_require__(54);
 
 var _Address2 = _interopRequireDefault(_Address);
 
@@ -22288,7 +22395,7 @@ var ContactForm = function (_Component) {
 exports.default = ContactForm;
 
 /***/ }),
-/* 44 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22380,7 +22487,7 @@ var Address = function (_Component) {
 exports.default = Address;
 
 /***/ }),
-/* 45 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22396,11 +22503,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _SocialMedia = __webpack_require__(46);
+var _SocialMedia = __webpack_require__(56);
 
 var _SocialMedia2 = _interopRequireDefault(_SocialMedia);
 
-var _Designer = __webpack_require__(47);
+var _Designer = __webpack_require__(57);
 
 var _Designer2 = _interopRequireDefault(_Designer);
 
@@ -22443,7 +22550,7 @@ var Footer = function (_Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 46 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22514,7 +22621,7 @@ var SocialMedia = function (_Component) {
 exports.default = SocialMedia;
 
 /***/ }),
-/* 47 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22564,7 +22671,7 @@ var Designer = function (_Component) {
 exports.default = Designer;
 
 /***/ }),
-/* 48 */
+/* 58 */
 /***/ (function(module, exports) {
 
 module.exports = {"en":{"profileDesc":["I am Wojciech,"," and currently I'm looking for a job as a "," Junior Front-End Developer."],"myItems":["Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.","Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.","Learn More"],"recentWork":["Recent work","Full GitHub Profile"],"elementRecentWork":[{"title":"Watch website","text":"website about clock","img":"../image/zegarex.png"},{"title":"Splash website","text":"website for edit","img":"../image/splash.png"},{"title":"Wisielec game","text":"a game based on guessing words","img":"../image/wisielec.png"},{"title":"Weather App","text":"the apps shows the weather conditions for the current location","img":"../image/weather.png"},{"title":"Counter","text":"this is a game that allows you to practice adding number","img":"../image/counter.png"},{"title":"Create Diagram","text":"this project allows to create a bar graph/chart only.","img":"../image/diagram.png"},{"title":"ToDo List","text":"add tasks to your list.","img":"../image/todolist.png"},{"title":"Furry Game","text":"a variation of the popular 'Snake' game","img":"../image/furry.png"},{"title":"SitOnChair Website","text":"website","img":"../image/sitonchair.png"},{"title":"Bloog website","text":"bloog","img":"../image/bloog.png"}],"contactForm":["Get In Touch","Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.","Name","Email","Message","Send Message"],"address":["Warsaw City","00-123","Poland","+48 123-456-789","wojte_kk@wp.pl"]},"pl":{"profileDesc":["Cześć! Jestem Wojtek,"," obecnie poszukuję pracy na stanowisku"," Junior Front-End Developer."],"myItems":["Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.","Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.","Zobacz więcej"],"recentWork":["Moje projekty","Profil GitHub"],"elementRecentWork":[{"title":"Watch website","text":"strona poświęcona zegarkom","img":"../image/zegarex.png"},{"title":"Splash website","text":"strona do edycji","img":"../image/splash.png"},{"title":"Wisielec","text":"gra oparta na zgadywaniu słów","img":"../image/wisielec.png"},{"title":"Weather App","text":"aplikacje pokazują warunki pogodowe dla bieżącej lokalizacji","img":"../image/weather.png"},{"title":"Counter","text":"gra, która pozwala ćwiczyć dodawanie liczb","img":"../image/counter.png"},{"title":"Create Diagram","text":"projekt pozwala tylko na tworzenie wykresów","img":"../image/diagram.png"},{"title":"ToDo List","text":"lista zadań","img":"../image/todolist.png"},{"title":"Furry Game","text":"odmiana popularnej gry 'Snake'","img":"../image/furry.png"},{"title":"SitOnChair Website","text":"przykładowa srona","img":"../image/sitonchair.png"},{"title":"Bloog website","text":"przykładowy blog","img":"../image/bloog.png"}],"contactForm":["Napisz do mnie","Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.","Imię","Email","Wiadomość","Wyślij wiadomość"],"address":["Warsaw City","00-123","Poland","+48 123-456-789","wojte_kk@wp.pl"]}}
