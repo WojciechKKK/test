@@ -22086,6 +22086,7 @@ var RecentWork = function (_Component) {
                 dataRecent = _props.dataRecent,
                 dataElementRecent = _props.dataElementRecent;
 
+            console.log(this.state.list);
             return _react2.default.createElement(
                 'div',
                 { className: 'recent_work' },
@@ -22172,7 +22173,7 @@ var ElementRecentWork = function (_Component) {
                         { className: "element-param" },
                         this.props.text
                     ),
-                    _react2.default.createElement("img", { className: "element_img", src: this.props.img, alt: "screen_strony", title: this.props.title })
+                    _react2.default.createElement("div", { className: "element_img", style: { backgroundImage: "url(" + this.props.img + ")", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' } })
                 )
             );
         }
