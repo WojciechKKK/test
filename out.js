@@ -22331,8 +22331,8 @@ var RecentWork = function (_Component) {
                     _react2.default.createElement(
                         'div',
                         { className: 'work_elements' },
-                        dataElementRecent.map(function (el) {
-                            return _react2.default.createElement(_ElementRecentWork2.default, { key: el.title, title: el.title, text: el.text, img: _this2.state.list[_sitonchair2.default], url: el.url, code: el.code, textBox: dataBoxViev });
+                        dataElementRecent.map(function (el, i) {
+                            return _react2.default.createElement(_ElementRecentWork2.default, { key: el.title, title: el.title, text: el.text, img: _this2.state.list[i], url: el.url, code: el.code, textBox: dataBoxViev });
                         })
                     ),
                     _react2.default.createElement(
