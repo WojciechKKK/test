@@ -21678,19 +21678,19 @@ var _RecentWork = __webpack_require__(44);
 
 var _RecentWork2 = _interopRequireDefault(_RecentWork);
 
-var _ContactForm = __webpack_require__(56);
+var _ContactForm = __webpack_require__(66);
 
 var _ContactForm2 = _interopRequireDefault(_ContactForm);
 
-var _Footer = __webpack_require__(58);
+var _Footer = __webpack_require__(68);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _ScrollTop = __webpack_require__(59);
+var _ScrollTop = __webpack_require__(69);
 
 var _ScrollTop2 = _interopRequireDefault(_ScrollTop);
 
-var _language = __webpack_require__(60);
+var _language = __webpack_require__(70);
 
 var _language2 = _interopRequireDefault(_language);
 
@@ -22243,6 +22243,46 @@ var _ElementRecentWork = __webpack_require__(45);
 
 var _ElementRecentWork2 = _interopRequireDefault(_ElementRecentWork);
 
+var _zegarex = __webpack_require__(56);
+
+var _zegarex2 = _interopRequireDefault(_zegarex);
+
+var _splash = __webpack_require__(57);
+
+var _splash2 = _interopRequireDefault(_splash);
+
+var _wisielec = __webpack_require__(58);
+
+var _wisielec2 = _interopRequireDefault(_wisielec);
+
+var _weather = __webpack_require__(59);
+
+var _weather2 = _interopRequireDefault(_weather);
+
+var _counter = __webpack_require__(60);
+
+var _counter2 = _interopRequireDefault(_counter);
+
+var _diagram = __webpack_require__(61);
+
+var _diagram2 = _interopRequireDefault(_diagram);
+
+var _todolist = __webpack_require__(62);
+
+var _todolist2 = _interopRequireDefault(_todolist);
+
+var _furry = __webpack_require__(63);
+
+var _furry2 = _interopRequireDefault(_furry);
+
+var _sitonchair = __webpack_require__(64);
+
+var _sitonchair2 = _interopRequireDefault(_sitonchair);
+
+var _bloog = __webpack_require__(65);
+
+var _bloog2 = _interopRequireDefault(_bloog);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22260,7 +22300,8 @@ var RecentWork = function (_Component) {
         var _this = _possibleConstructorReturn(this, (RecentWork.__proto__ || Object.getPrototypeOf(RecentWork)).call(this));
 
         _this.state = {
-            github: "https://github.com/WojciechKKK"
+            github: "https://github.com/WojciechKKK",
+            list: [_zegarex2.default, _splash2.default, _wisielec2.default, _weather2.default, _counter2.default, _diagram2.default, _todolist2.default, _furry2.default, _sitonchair2.default, _bloog2.default]
         };
         return _this;
     }
@@ -22268,6 +22309,8 @@ var RecentWork = function (_Component) {
     _createClass(RecentWork, [{
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             var _props = this.props,
                 dataRecent = _props.dataRecent,
                 dataElementRecent = _props.dataElementRecent,
@@ -22289,7 +22332,7 @@ var RecentWork = function (_Component) {
                         'div',
                         { className: 'work_elements' },
                         dataElementRecent.map(function (el) {
-                            return _react2.default.createElement(_ElementRecentWork2.default, { key: el.title, title: el.title, text: el.text, img: el.img, url: el.url, code: el.code, textBox: dataBoxViev });
+                            return _react2.default.createElement(_ElementRecentWork2.default, { key: el.title, title: el.title, text: el.text, img: _this2.state.list[_sitonchair2.default], url: el.url, code: el.code, textBox: dataBoxViev });
                         })
                     ),
                     _react2.default.createElement(
@@ -27277,6 +27320,66 @@ module.exports = hoistNonReactStatics;
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "8753abd3e5f6a6a06adf636b42e01059.png";
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6e6a1400330d49f4f5d4ed1d75141d10.png";
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "18624644ae02f24a2e76403ea76e5582.png";
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "901d56e1fdc338835eaa010c45bafbaf.png";
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "8abdd5107434493e07d723cee78ddbaa.png";
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "61de914771da59488f5fcaaf0faa6897.png";
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "93ff705332263c63823ff4da328330b6.png";
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e5ac54cfea4de76fe757dbdf40114f96.png";
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "20a6b02dc1d1a7159d462d4308988902.png";
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6d769c6a125a82844d8b601bfd3e398f.png";
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -27290,7 +27393,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Address = __webpack_require__(57);
+var _Address = __webpack_require__(67);
 
 var _Address2 = _interopRequireDefault(_Address);
 
@@ -27451,7 +27554,7 @@ var ContactForm = function (_Component) {
 exports.default = ContactForm;
 
 /***/ }),
-/* 57 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27536,7 +27639,7 @@ var Address = function (_Component) {
 exports.default = Address;
 
 /***/ }),
-/* 58 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27594,7 +27697,7 @@ var Footer = function (_Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 59 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27685,7 +27788,7 @@ var ScrollTop = function (_Component) {
 exports.default = ScrollTop;
 
 /***/ }),
-/* 60 */
+/* 70 */
 /***/ (function(module, exports) {
 
 module.exports = {"en":{"profileDesc":["Hello! I'm Wojciech,"," and currently aspiring for a job as "," Junior Front-end Developer"],"myItems":["On this website I would like to present you what I learnt so far...","My name is Wojciech and I work as a Support Engineer every day. For the last 3 years I have the pleasure to explore my vision in the Support section. Programming has been around for one and a half and at the same time I've also completed the Javascript Developer bootcamp. During learning, I mastered the ability to use for example: Sass, Git, Webpack, jQuery, ES6, JavaScript, React. I would like to find a position that would allow me to use my existing skills and help me further develop my knowledge, especially in the field of web development and programming of the JavaScript and React framework, but I am also open to other possibilities.","All of the following projects are created by me, I did not use them, no ready solutions (bootstrap), thank you for taking the time to visit my website and review my work.","More Information","Hide"],"recentWork":["Recent work","Full GitHub Profile"],"elementRecentWork":[{"title":"Watch Website","text":"website for company about clock","img":"../image/zegarex.png","url":"https://wojciechkkk.github.io/watch_website/#/","code":"https://github.com/WojciechKKK/watch_website"},{"title":"Splash Website","text":"website for company","img":"../image/splash.png","url":"https://wojciechkkk.github.io/splash_website/index.html","code":"https://github.com/WojciechKKK/splash_website"},{"title":"Wisielec game","text":"game based on guessing words","img":"../image/wisielec.png","url":"https://wojciechkkk.github.io/wisielec_game/index.html","code":"https://github.com/WojciechKKK/wisielec_game"},{"title":"Weather App","text":"apps shows the weather conditions for the current location","img":"../image/weather.png","url":"https://wojciechkkk.github.io/weather_app/index.html","code":"https://github.com/WojciechKKK/weather_app"},{"title":"Counter Game","text":"game that allows you to practice adding number","img":"../image/counter.png","url":"https://wojciechkkk.github.io/counter_game/index.html","code":"https://github.com/WojciechKKK/counter_game"},{"title":"Create Diagram","text":"project allows to create a bar graph/chart only","img":"../image/diagram.png","url":"https://wojciechkkk.github.io/create_diagram/index.html","code":"https://github.com/WojciechKKK/create_diagram"},{"title":"ToDo List","text":"add tasks to your list","img":"../image/todolist.png","url":"https://wojciechkkk.github.io/to_do_list_RestAPI/index.html","code":"https://github.com/WojciechKKK/to_do_list_RestAPI"},{"title":"Furry Game","text":"variation of the popular 'Snake' game","img":"../image/furry.png","url":"https://wojciechkkk.github.io/furry_game/index.html","code":"https://github.com/WojciechKKK/furry_game"},{"title":"SitOnChair Website","text":"template","img":"../image/sitonchair.png","url":"","code":"https://github.com/WojciechKKK/sit_on_chair"},{"title":"Blog website","text":"blog template","img":"../image/bloog.png","url":"","code":"https://github.com/WojciechKKK/blog"}],"boxInfoView":["View Demo"," Code View"],"contactForm":["Get In Touch","If you are interested in working with me, or just want to talk, then I invite you to contact me using the form below","Name","Email","Message","Send Message"],"address":["Warsaw City, Poland","+48 123-456-789","wojte_kk@wp.pl"]},"pl":{"profileDesc":["Cześć! Jestem Wojtek,"," obecnie aspiruję na stanowisko"," Junior Front-end Developer"],"myItems":["Na tej stronie chciałbym przedstawić to, czego do tej pory się nauczyłem...","Mam na imię Wojciech i na codzień pracuję jako Support Engineer. Przez ostatnie 3 lata mam przyjemność zgłębiać swoją widzę w dziale Support. Programowaniem zajmuje się od około półtora, w tym czasie ukończyłem również bootcamp Javascript Developer. Podczas nauki opanowałem umiejętność korzystania z m.in.: Sass, Git, Webpack, jQuery, ES6, JavaScript, React. Chciałbym znaleźć stanowisko, które pozwoliłoby mi wykorzystać moje istniejące umiejętności i pomóc mi dalej rozwijać swoją wiedzę, szczególnie w zakresie tworzenia aplikacji internetowych i programowania z wykorzystaniem JavaScriptu oraz frameworku React, ale jestem również otwarty na inne propozyje.","Wszystkie poniższe projekty są mojego autorstwa. Do ich tworzenia nie wykorzystywałem, żadnych gotowych rozwiązań (bootstrap). Dziękuję za poświęcenie czasu na odwiedzenie mojej strony i przejrzenie mojej pracy.","Więcej informacji","Ukryj"],"recentWork":["Moje projekty","Profil GitHub"],"elementRecentWork":[{"title":"Watch website","text":"strona firmowa poświęcona zegarkom","img":"../image/zegarex.png","url":"https://wojciechkkk.github.io/watch_website/#/","code":"https://github.com/WojciechKKK/watch_website"},{"title":"Splash website","text":"strona firmowa","img":"../image/splash.png","url":"https://wojciechkkk.github.io/splash_website/index.html","code":"https://github.com/WojciechKKK/splash_website"},{"title":"Wisielec","text":"gra oparta na zgadywaniu słów","img":"../image/wisielec.png","url":"https://wojciechkkk.github.io/wisielec_game/index.html","code":"https://github.com/WojciechKKK/wisielec_game"},{"title":"Create Diagram","text":"projekt pozwala na tworzenie wykresów","img":"../image/diagram.png","url":"https://wojciechkkk.github.io/create_diagram/index.html","code":"https://github.com/WojciechKKK/create_diagram"},{"title":"Weather App","text":"aplikacje pokazują warunki pogodowe dla bieżącej lokalizacji","img":"../image/weather.png","url":"https://wojciechkkk.github.io/weather_app/index.html","code":"https://github.com/WojciechKKK/weather_app"},{"title":"Counter","text":"gra pozwalająca ćwiczyć dodawanie cyfr","img":"../image/counter.png","url":"https://wojciechkkk.github.io/counter_game/index.html","code":"https://github.com/WojciechKKK/counter_game"},{"title":"ToDo List","text":"popularna lista zadań","img":"../image/todolist.png","url":"https://wojciechkkk.github.io/to_do_list_RestAPI/index.html","code":"https://github.com/WojciechKKK/to_do_list_RestAPI"},{"title":"Furry Game","text":"odmiana popularnej gry 'Snake'","img":"../image/furry.png","url":"https://wojciechkkk.github.io/furry_game/index.html","code":"https://github.com/WojciechKKK/furry_game"},{"title":"SitOnChair Website","text":"przykładowy template","img":"../image/sitonchair.png","url":"","code":"https://github.com/WojciechKKK/sit_on_chair"},{"title":"Bloog website","text":"przykładowy blog","img":"../image/bloog.png","url":"","code":"https://github.com/WojciechKKK/blog"}],"boxInfoView":["Zobacz Demo","Widok Kodu"],"contactForm":["Napisz do mnie","Jeśli jesteś zainteresowany/-a współpracą ze mną, lub po prostu chcesz porozmawiać, to zapraszam do kontaktu za pomocą poniższego formularza.","Imię","Email","Wiadomość","Wyślij wiadomość"],"address":["Warsaw City, Poland","+48 123-456-789","wojte_kk@wp.pl"]}}
